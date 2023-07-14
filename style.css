@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    /* background-image: url('bg.jpg'); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+#advertise{
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    float: left;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+}
+.navbar {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 5rem;
+}
+.navbar button{
+    width: 12%;
+    border-radius: 50;
+    margin-left: 3rem;
+    background-color: transparent;
+    border-color: #fff;
+    border-right-color: #fff;
+}
+.navbar button:hover{
+    background-image: linear-gradient(to right,aqua,cyan);
+    border-top-right-radius: 35%;
+    border-bottom-left-radius: 35%;
+}
+
+.navbar-brand {
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin-left: 1.5rem;
+    margin-top: .5rem;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    float: right;
+   
+}
+.navbar-nav a:hover{
+    background-color: aqua;
+    color: black;
+    font-size: 1.5vw;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.navbar-nav a{
+    margin-top: 1rem;
+    float: right;
+    font-size: 1.2vw;
+    /* margin-left: 2rem; */
+    margin-right: 2rem;
+    /* color: rgb(255, 255, 255); */
+    color: black;
+    justify-content: space-evenly;
+}
+.search{
+    margin-top: 0.5rem;
+    height: 40px;
+    width: 40%;
+    border-radius: 8px;
+    text-align:center;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.news{
+    justify-self: center;
+    align-items: center;
+    margin-left: 65rem;
+    margin-top: 8rem;
+    font-family: sans-serif;
+}
+.news .Firstpara{
+    color: #000;
+    font-size: 1.5vw;
+    margin-bottom: 2rem;
+}
+.news .Secondpara{
+    color: #000;
+    font-size: 2vw;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+}
+.news .Thirdpara{
+    font-style: italic;
+    
+    color: #000;
+    font-size: 5vw;
+}
+.news .Shop{
+    margin-left: 2.5rem;
+    color: black;
+    font-size: 2vw;
+    margin-top: 2rem;
+    height: 60px;
+    width: 260px;
+    border-radius: 8px;
+    background-color: aqua;
+}
+.news .Shop:hover{
+    background-color: rgb(41, 11, 130);
+    color: white;
+}
+.cards{
+    margin-top: 3%;
+    display: flex;
+    height: 150px;
+    width: 100px;
+    overflow-x: scroll;
+    width: 100%;
+    height: auto;
+}
+.card {  
+
+    background-color: #fff;
+    margin: 10px;
+    width: 100rem;
+
+}
+.shoes {  
+
+    margin-top: 3%;
+    display: flex;
+    height: 70px;
+    width: 100px;
+    overflow-x: scroll;
+    width: 100%;
+    height: auto;
+
+}
+.watchs {  
+    margin-top: 3%;
+    display: flex;
+    height: 70px;
+    width: 100px;
+    overflow-x: scroll;
+    width: 100%;
+    height: auto;
+    
+}
+.watch{
+    margin-left: 1rem;
+
+}
+.shoe img{
+
+    width: 100%;
+    height: 8rem;
+}
+.watch img{
+
+    width: 100%;
+    height: 15rem;
+}
+ .shoe #title{  
+    color: grey;
+}
+ .card #title{  
+    color: grey;
+}
+.card img{
+    width: 100%;
+    height: 22rem;  
+}
+.cardcontent{
+    flex-direction: row;
+    transition: transform .35s cubic-bezier(.17,.67,.21,1),-webkit-transform .35s cubic-bezier(.17,.67,.21,1);
+    will-change: transform;
+    position: relative;
+    background: #fff;
+    z-index: 7;
+    padding: 5px 16px 18px;
+}
+ .shoe .cardcontent{
+    flex-direction: row;
+    transition: transform .35s cubic-bezier(.17,.67,.21,1),-webkit-transform .35s cubic-bezier(.17,.67,.21,1);
+    will-change: transform;
+    position: relative;
+    background: #fff;
+    z-index: 7;
+    padding: 5px 16px 18px;
+}
+ .watch .cardcontent{
+    flex-direction: row;
+    transition: transform .35s cubic-bezier(.17,.67,.21,1),-webkit-transform .35s cubic-bezier(.17,.67,.21,1);
+    will-change: transform;
+    position: relative;
+    background: #fff;
+    z-index: 7;
+    padding: 5px 16px 18px;
+}
+.buttons{
+    display: flex;
+    margin: 10px;
+}
+.watch .buttons #buynow{
+    width: 60%;
+}
+.watch .buttons #wishlist{
+    width: 60%;
+}
+
+#buynow{
+    background-color: rgb(238, 255, 56);
+    width: 50%;
+    height: 2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+#wishlist{
+    background-color: white;
+    width: 60%;
+    height: 2rem;
+    cursor: pointer;
+
+}
+ .shoe #buynow{
+    background-color: rgb(238, 255, 56);
+    width: 50%;
+    height: 2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+ .shoe #wishlist{
+    background-color: white;
+    width: 50%;
+    height: 2rem;
+    cursor: pointer;
+
+}
+/* .firstlist .bottomfirstlist{
+    list-style: none;
+    text-decoration: none;
+    color:black;
+} */
+.bottomlist{
+    margin-left: 5rem;
+    margin-right: 2rem;
+    width: 93%;
+    display: flex;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+}
+ .firstlist .bottomfirstlist  {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.secondlist .bottomsecondlist{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+.thirdlist .bottomthirdlist{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+.fourthlist .bottomfourthlist{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+.fifthlist .bottomfifthlist{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+#advertisement
+{
+    width: 50%;height: 4rem; margin-top: 1.5rem;
+}
+
+/* .bottomcontainer .bottompara p{
+    width: 20%;
+} */
+
+.buttons #heartsymbol{
+    color: red;
+    font-size:1.3vw;
+}
+
+
+/* Responsive styles */
+
+@media (max-width:768px) {
+    .card{
+     float: none;
+      margin: 5%;
+      width: 90%;
+  }
+  }
+@media screen and (max-width: 600px) {
+    .navbar {
+        /* flex-direction: column; */
+        align-items: flex-start;
+    }
+    .navbar img{
+        width: 40px;
+    }
+    .navbar p{
+
+        margin-top: 10px;
+        font-size: 2vw;
+    }
+    .buttons #heartsymbol {
+        color: red;
+        font-size: 4.3vw;
+    }
+    .cards{
+        flex-wrap: wrap;
+    }
+    .main {
+        width: 100%;
+        height: 50vh;
+    }
+    .buttons{
+        margin-top: 8px;
+        margin-left: 0px;
+    }
+    #wishlist span{
+        font-size: 3rem;
+    }    
+    .navbar-nav {
+        margin-top: 10px;
+        display: none;
+    }
+    
+    .nav-item {
+        margin: 5px 0;
+    }
+    .navbar-brand {
+        font-size: 2.5vw;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+        margin-left: .5rem;
+        /* margin-top: 0.5rem; */
+    }
+    #advertise {
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+        float: left;
+        margin-top: -1.5rem;
+    }
+    .search {
+        margin-top: 0.5rem;
+        height: 20px;
+        width: 40%;
+        border-radius: 8px;
+        text-align: center;
+    }
+    #advertisement{
+        width: 84%;
+        height: 1.8rem;
+        margin-top: 0.5em;
+    }
+    .bottomlist {
+        /* margin-left: 5rem; */
+        /* margin-right: 2rem; */
+        width: 3%;
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        /* margin-top: 4rem; */
+        font-size: .5rem;
+    }
+    .secondlist .bottomsecondlist {
+        text-decoration: none;
+        color: black;
+        list-style: none;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        cursor: pointer;
+    }
+    .thirdlist .bottomthirdlist{
+        margin-left: 1rem;
+    }
+    .fourthlist .bottomfourthlist{
+        margin-left: 1rem;
+    }
+    .fifthlist .bottomfifthlist{
+        display: none;
+    }
+    .shoes {
+        margin-top: 3%;
+        display: flex;
+        height: 70px;
+        width: 100px;
+        overflow-x: clip;
+        width: 100%;
+        display: block;
+        height: auto;
+        flex-wrap: wrap;
+    }    
+    .watchs {
+        margin-top: 3%;
+        display: flex;
+        height: 100px;
+        width: 100px;
+        overflow-x: clip;
+        width: 100%;
+        display: block;
+        height: auto;
+        flex-wrap: wrap;
+    }    
+}

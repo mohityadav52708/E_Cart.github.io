@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="stylelogin.css">
+    <link rel="icon" type="image/x-icon" href="logo2.jpg">
+
+</head>
+<style>
+ body {
+  font-family:Arial; 
+  background: -webkit-linear-gradient(to right, #155799, #159957); 
+  background: linear-gradient(to right, #361599, #620f6a); 
+  color:whitesmoke;
+  background-color: antiquewhite;
+}
+</style>
+<body>
+    <!-- <h1>This is going to be a Login Page</h1> -->
+    <div class="container"> 
+
+                <h1 id="heading">Login Page</h1>
+                <p id="para">Username</p>
+                <input type="text" placeholder="username" name="" id="inp" required>
+                <p id="para">Password</p>
+                <input  type="password" placeholder="Password" name="" id="inp" required>
+                <div class="buttons">
+                <button  class="login" id="login" onclick="newwindow()">Login</button>
+                <button  class="sign"  id="sign"onclick="newwindow()">Sign-up</button>
+              </div>
+
+    </div>
+    <script src="indexlogin.js"></script>
+    
+</body>
+</html>
